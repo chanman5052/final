@@ -6,8 +6,8 @@
           <li><router-link to="/">E720</router-link></li>
           <li><router-link to="/job">Job Listing</router-link></li>
           <li> <router-link to="/saved"> Saved Jobs ({{ $root.$data.saved_jobs.length }})</router-link></li>
-          <li><router-link to="/application">My Applications ({{ $root.$data.my_applications.length }})</router-link></li>   
-          <li><router-link to="/saveapp">Submitted Applications</router-link></li>
+          <li><router-link to="/application">Applications ({{ $root.$data.my_applications.length }})</router-link></li>   
+          <li><router-link to="/saveapp">Playa Profile</router-link></li>
           <li><router-link to="/employers">Employers</router-link></li>
         </ul>
       </nav>

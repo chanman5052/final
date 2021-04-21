@@ -11,6 +11,8 @@ let data = {
   saved_jobs: [],
   my_applications: [],
   users: [],
+  user: null,
+  employer: null,
 }
 
 new Vue({

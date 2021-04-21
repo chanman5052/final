@@ -17,7 +17,6 @@
 
           <button class="button is-rounded is-link is-centered" @click= "applyJob(job)">Apply</button>
           <br/>
-          <button class="button is-rounded is-danger" @click= "removeJob(job)">Remove</button>
         </div>
         </div>
       </div>
@@ -39,11 +38,9 @@ export default {
         }
     },
     methods: {
-        removeJob(job) {
-            this.$root.$data.saved_jobs.splice(job, 1);
-        },
         applyJob(job) {
             this.$root.$data.my_applications.push(job);
+            this.$root.$data.saved_jobs.splice(job, 1);
             
         }
     }
