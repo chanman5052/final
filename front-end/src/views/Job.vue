@@ -45,7 +45,7 @@ export default {
         this.jobs = response.data;
         return true;
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
     },
     saveJob(job) {
@@ -73,11 +73,15 @@ export default {
 .job {
   margin: 10px;
   margin-top: 50px;
-  width: 30%
+  width: 30%;
 }
 .button {
   text-align: center;
   margin-bottom: 10px;
 }
-
+@media only screen and (max-width: 425px) {
+  .job {
+    max-width: 100%;
+  }
+}
 </style>

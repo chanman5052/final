@@ -100,7 +100,7 @@ export default {
                 this.users = response.data;
                 return true;
             } catch (error) {
-                console.log(error);
+                //console.log(error);
             }
         },
         async getApps() {
@@ -109,7 +109,7 @@ export default {
                 this.applications = response.data;
                 return true;
             } catch (error) {
-                console.log(error);
+                //console.log(error);
             }
         },
         selectApp(application) {
@@ -128,7 +128,7 @@ export default {
         this.getApps();
         return true;
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
     },
      async deleteApp(application) {
@@ -138,7 +138,7 @@ export default {
         this.getApps();
         return true;
       } catch (error) {
-        console.log(error);
+        //console.log(error);
       }
     },
     async logout() {

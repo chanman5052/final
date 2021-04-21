@@ -65,6 +65,11 @@ export default {
         return{
             submit: false,
             deleted: false,
+            name: '',
+            contact: '',
+            degree: '',
+            availability: '',
+            pitch: '',
         }
     },
     computed: {
@@ -104,7 +109,7 @@ export default {
             this.submit = true;
             this.$root.$data.my_applications = [];
         } catch (error) {
-            console.log(error);
+            //console.log(error);
         }
     },
         
